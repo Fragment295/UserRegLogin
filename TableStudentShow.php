@@ -1,10 +1,10 @@
 <?php
 session_start();
-$con=mysqli_connect('localhost','root','');
-mysqli_select_db($con,'rlibrary');
+$con=mysqli_connect('localhost','root','123456');
+mysqli_select_db($con,'studentregistration');
 
 
-$s= "select * from student" ;
+$s= "select * from studentinfo" ;
 
 $result=mysqli_query($con,$s);
 
@@ -13,7 +13,7 @@ $result=mysqli_query($con,$s);
 <html>
     <head>
         <title>
-        Student Data
+        Student Information
         </title>
     </head>
     <style>
@@ -46,10 +46,14 @@ $result=mysqli_query($con,$s);
         <table>
             <tr>
                 <th colspan="2"><h1>Student Table</h1></th>
+    </tr>
             <tr>
-            <tr>
-                <th> Student No</th>
                 <th> Student Name</th>
+                <th> Student ID</th>
+                <th> Student Email</th>
+                <th> Hall name</th>
+                <th> Series</th>
+                <th> Department</th>
             </tr>
          
             <?php
@@ -57,10 +61,22 @@ $result=mysqli_query($con,$s);
                 ?>
                 <tr>
                     <td>
-                        <?php echo $row["stud_no"] ?>
+                        <?php echo $row["name"] ?>
                     </td>
                     <td>
-                        <?php echo $row["stud_name"] ?>
+                        <?php echo $row["id"] ?>
+                    </td>
+                    <td>
+                        <?php echo $row["email"] ?>
+                    </td>
+                    <td>
+                        <?php echo $row["hallname"] ?>
+                    </td>
+                    <td>
+                        <?php echo $row["series"] ?>
+                    </td>
+                    <td>
+                        <?php echo $row["department"] ?>
                     </td>
                 </tr>
                 <?php
