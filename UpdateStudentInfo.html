@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel = "stylesheet" type = "text/css" href = "Style.css">
+    <link rel = "stylesheet" type = "text/css" 
+    href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+        <meta charset="utf-8">
+    <title>
+        Update Student Information
+    </title>
+    <style>
+    p{
+    
+     color: white;
+     font-size: 20px;
+     text-align: center;
+    }
+    </style>
+
+    <div class = "full_form" >
+    <div class = "update_container">
+    <div class = "update_row">
+     <div class = "col-md-6 login-left">
+
+       <form class = "update_form" action="UpdateStudentInfo.php" method="post">
+       
+        <div class="textbox">
+                <input type="text" placeholder="Student ID" id="student_id" name="id" class="form-control" required>
+
+        </div>
+        <div class="textbox">
+                <input type="text" placeholder="Student New ID" id="new_student_id" name="new_id" class="form-control" required>
+
+        </div>
+        
+        <div class="textbox">
+            <input type="text" placeholder="Student New Name" id="student_new_name" name="new_name" class="form-control" required>
+
+    </div>
+         <div class="textbox">
+        <input type="text" placeholder="Student New Password" id="student_new_pass" name="new_pass" class="form-control" required>
+
+    </div>
+        <div class="textbox">
+        <input type="text" placeholder="Student New Email" id="student_new_email" name="new_email" class="form-control" required>
+
+</div>
+      <div class="textbox">
+      <input type="text" placeholder="Student New Hall" id="student_new_hall" name="new_hall" class="form-control" required>
+
+</div>
+      <div class="textbox">
+      <input type="text" placeholder="Student New Series" id="student_new_series" name="new_series" class="form-control" required>
+
+</div>
+      <div class="textbox">
+      <input type="text" placeholder="Student New Dept" id="student_new_dept" name="new_dept" class="form-control" required>
+
+</div>
+    
+<button type="submit" class = "btn btn-primary"> UPDATE </button>  
+
+
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<p>N.B. : IF ANY FIELD IS NOT TO BE UPDATED, PLEASE KEEP THAT AS IT IS. </p>
+
+</head>
+</html>
