@@ -37,7 +37,7 @@ else if($num_s == 1) {
 }
 
 else {
-  header('location:LoginRegistrationHTML.php');}
+  header('location:StudentLoginRegistrationHTML.php');}
     
 
 ?>
