@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['name'])){
-    header('location:StudentLoginRegistrationHTML.php');
+   /* header('location:StudentLoginRegistrationHTML.php');*/
 }
 
 
@@ -24,6 +24,12 @@ if(!isset($_SESSION['name'])){
          text-align:center;
          font-size: 30px;
       }
+      h1{
+    color: #fff !important;
+    margin-top: 100px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
   </style>  
 <body>
     
