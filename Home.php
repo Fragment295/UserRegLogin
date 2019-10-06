@@ -6,10 +6,20 @@
       href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
+<style>
+ h2{
+    color: #fff !important;
+    margin-top: 100px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+ }
+    </style>
+
+
 <body>
 
 <nav>
-    <!-- <img src = "HostelManagementLogo02.jpg" width = "200" height = "80">-->
     <ul>
     
      <li><a href="AdminLoginRegistrationHTML.php">ADMIN</a></li>
@@ -18,7 +28,9 @@
     </ul>
    </nav>
   
-
+     <div class="welcomeText">
+     <h2> WELCOME TO THE HOSTEL MANAGEMENT SYSTEM OF RUET </h2>
+     </div>
 
 </body>
 
