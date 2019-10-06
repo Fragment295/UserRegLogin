@@ -29,15 +29,15 @@ $num_a = mysqli_num_rows($result_a);
 
 if($num_a == 1){
    $_SESSION['name'] = $name;
-         header('location:Admin.php'); }
+         header('location:AdminPage.php'); }
   
 else if($num_s == 1) {
    $_SESSION['name'] = $name;
-   header('location:Home.php');
+   header('location:StudentPage.php');
 }
 
 else {
-  header('location:Login.php');}
+  header('location:LoginRegistrationHTML.php');}
     
 
 ?>
