@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['name'])){
-    header('location:Login.php');
+    header('location:StudentLoginRegistrationHTML.php');
 }
 
 
@@ -12,20 +12,31 @@ if(!isset($_SESSION['name'])){
 
 <html>
 <head>
-<title> Home </title>  
+<title> Student Page </title>  
       <link rel = "stylesheet" type = "text/css" href = "Style.css">
       <link rel = "stylesheet" type = "text/css" 
       href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
 </head>
-    
+  <style>
+      p{
+         color:white;
+         text-align:center;
+         font-size: 30px;
+      }
+  </style>  
 <body>
     
-    <div class="container">
+<nav>
+    <ul>
+    <li><a class="active" href="Home.php">HOME</a></li>
+     <li><a href="Logout.php">LOGOUT</a></li>
+    </ul>
+   </nav>
     
-    <a class = "float-right" href = "Logout.php"> LOGOUT </a>
+    
     <h1> Hey <?php echo $_SESSION['name']; ?></h1>
-    <div class = "wel"> <p>Welcome to this Student Registration page!</p> </div>
+    <p>Welcome to this Student page!</p> 
     
     </div>
     
