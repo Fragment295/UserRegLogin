@@ -26,6 +26,11 @@
               <label> Password  </label>
               <input type = "password" name = "password" class = "form-control" required>
             </div>
+
+            <div class = "form-group">
+              <label> ID </label>
+              <input type = "number" name = "id" class = "form-control" required>
+            </div>
              
             <button type="submit" class = "btn btn-primary"> Login </button>  
               
