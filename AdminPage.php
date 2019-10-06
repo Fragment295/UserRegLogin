@@ -20,6 +20,15 @@ if(!isset($_SESSION['name'])){
       href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
      </head>
     
+<style>
+    h1{
+    color: #fff !important;
+    margin-top: 100px !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+    </style>
+
 <body>
     
    
