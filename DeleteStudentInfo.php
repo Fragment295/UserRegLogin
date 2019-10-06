@@ -8,6 +8,7 @@ $result=mysqli_query($con,$s);
 $Error=mysqli_error($con);
 if(empty($Error)){
     header('location:TableStudentShow.php');
+    echo .$StudentNo. "is deleted";
 }
 else{
     echo("Error Description: ".mysqli_error($con));
