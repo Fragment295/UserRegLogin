@@ -1,6 +1,6 @@
 <?php
 session_start();
-header('location:LoginRegistrationHTML.php');
+/* header('location:StudentLoginRegistrationHTML.php');*/
 
 $con = mysqli_connect('localhost','root','123456');
 mysqli_select_db($con,'studentregistration');
@@ -21,12 +21,12 @@ if (isset($_POST["department"])){
 $dept   = $_POST['department'];} 
 
 
- $ss_s = " select * from studentinfo where name = '$name'";
+ $ss_s = " select * from studentinfo where student_id = '$id'";
 $result_s = mysqli_query($con, $ss_s);
 $num_s = mysqli_num_rows($result_s);
 
 if($num_s == 1){
-    echo "Username Already Exists Fella";
+    echo "ID Already Exists Fella";
 }
 else {
    $reg = "insert into studentinfo (name,student_id,password,email,hallname,series,department) values ('$name','$id', '$pass','$email','$hall','$series','$dept')";
