@@ -20,3 +20,14 @@ if (isset($_POST["series"])){
 $series = $_POST['series'];}
 if (isset($_POST["department"])){
 $dept   = $_POST['department'];}
+
+
+
+$oldId= $_POST['id'];
+$newId= $_POST['new_id'];
+$newName = $_POST['new_name'];
+$newPass = $_POST['new_pass'];
+$newEmail = $_POST['new_email'];
+$newHall = $_POST['new_hall'];
+$newSeries = $_POST['new_series'];
+$newDept = $_POST['new_dept'];
