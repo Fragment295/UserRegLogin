@@ -22,10 +22,10 @@ $result=mysqli_query($con,$s);
             background:Seashell;
         }
         table{
-            width:800px;
+            width:1000px;
             margin:auto;
             text-align:center;
-            table-layout:fixed;
+            table-layout:auto;
         }
         table,tr,th,td{
             padding:20px;
@@ -45,12 +45,12 @@ $result=mysqli_query($con,$s);
         
         <table>
             <tr>
-                <th colspan="2"><h1>Student Table</h1></th>
+                <th colspan="13"><h1>Student Table</h1></th>
     </tr>
             <tr>
-                <th> Student Name</th>
-                <th> Student ID</th>
-                <th> Student Email</th>
+                <th colspan="2"> Student Name</th>
+                <th colspan="2"> Student ID</th>
+                <th colspan="3"> Student Email</th>
                 <th> Hall name</th>
                 <th> Series</th>
                 <th> Department</th>
@@ -60,13 +60,13 @@ $result=mysqli_query($con,$s);
             while ($row=mysqli_fetch_assoc($result)) {
                 ?>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <?php echo $row["name"] ?>
                     </td>
-                    <td>
-                        <?php echo $row["id"] ?>
+                    <td colspan="2">
+                        <?php echo $row["student_id"] ?>
                     </td>
-                    <td>
+                    <td colspan="3">
                         <?php echo $row["email"] ?>
                     </td>
                     <td>
