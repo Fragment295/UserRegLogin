@@ -1,6 +1,6 @@
 <?php
 session_start();
-header('location:Login.php');
+header('location:LoginRegistrationHTML.php');
 
 $con = mysqli_connect('localhost','root','123456');
 mysqli_select_db($con,'studentregistration');
@@ -31,7 +31,7 @@ if($num_s == 1){
 else {
    $reg = "insert into studentinfo (name,student_id,password,email,hallname,series,department) values ('$name','$id', '$pass','$email','$hall','$series','$dept')";
     mysqli_query($con,$reg);
-    header('location:Home.php');
+    header('location:StudentPage.php');
 }
     
 
