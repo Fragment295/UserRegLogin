@@ -1,0 +1,18 @@
+<ul>
+     <li><a class="active" href="Home.php">HOME</a></li>
+     <li><a href="UpdateStudentInfo.php">UPDATE</a></li>
+     <li><a href="DeleteStudentInfo.php">DELETE</a></li>
+     <li><a href="Logout.php">LOGOUT</a></li>
+   </ul>
+
+
+
+
+
+<<!--button type="submit" class="btn"><a href ="DeleteStudentInfo.html" >Delete</a></button>
+    <button type="submit" class="btn01"><a href ="UpdateStudentInfo.html" >Update</a></button> -->
+
+
+
+
+<!--<a class = "float-right" href = "Logout.php"> LOGOUT </a>-->
