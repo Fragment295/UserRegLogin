@@ -31,6 +31,8 @@ if($num_s == 1){
 else {
    $reg = "insert into studentinfo (name,student_id,password,email,hallname,series,department) values ('$name','$id', '$pass','$email','$hall','$series','$dept')";
     mysqli_query($con,$reg);
+    $_SESSION['name'] = $name;
+    $_SESSION['student_id'] = $id;
     header('location:StudentPage.php');
 }
     
