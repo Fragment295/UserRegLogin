@@ -33,6 +33,7 @@ if($num_a == 1){
   
 else if($num_s == 1) {
    $_SESSION['name'] = $name;
+   $_SESSION['student_id'] = $id;
    header('location:StudentPage.php');
 }
 
