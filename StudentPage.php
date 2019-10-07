@@ -1,9 +1,15 @@
 <?php
 session_start();
-if(!isset($_SESSION['name'])){
-   /* header('location:StudentLoginRegistrationHTML.php');*/
-}
+$con = mysqli_connect('localhost','root','123456');
+mysqli_select_db($con,'studentregistration');
 
+$SID = $_SESSION['student_id'];
+echo $SID;
+$s = "SELECT `name`, `student_id`, `email`, `hallname`, `series`, `department` FROM `studentinfo`
+       WHERE `student_id` = '$SID';" ;
+$result=mysqli_query($con,$s);
+$Error=mysqli_error($con);
+$row=mysqli_fetch_assoc($result);
 
 ?>
 
@@ -42,8 +48,15 @@ if(!isset($_SESSION['name'])){
     
     
     <h1> Hey <?php echo $_SESSION['name']; ?></h1>
-    <p>Welcome to this Student page!</p> 
+    <p>Welcome to this Student page! <br> Your current information </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
+    <p> Name :  <?php echo $row["name"] ?> </p>
     
+
     </div>
     
     </body>
